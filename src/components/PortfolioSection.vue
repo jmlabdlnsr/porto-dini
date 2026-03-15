@@ -98,11 +98,4 @@ const filteredItems = computed(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-@media (max-width: 640px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-}
 </style>
