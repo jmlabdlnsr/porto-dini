@@ -52,6 +52,12 @@
 <script setup>
 import { ref, computed } from 'vue';
 
+// Import images
+import imgI1 from '../assets/ilustrasi/i1.jpeg';
+import imgH2 from '../assets/himaptika/h2.jpeg';
+import imgG2 from '../assets/gemamatematika/g2.jpeg';
+import imgK2 from '../assets/kkn/k2.jpeg';
+
 const categories = ['Semua', 'Desain Grafis', 'Social Media', 'Videografi'];
 const activeCategory = ref('Semua');
 
@@ -59,22 +65,22 @@ const portfolioItems = [
   {
     title: 'Desain Poster Pembelajaran',
     category: 'Desain Grafis',
-    image: '/src/assets/ilustrasi/i1.jpeg'
+    image: imgI1
   },
   {
     title: 'Konten Media Sosial @himaptikaunsil',
     category: 'Social Media',
-    image: '/src/assets/himaptika/h2.jpeg'
+    image: imgH2
   },
   {
     title: 'Konten Media Sosial @gemamatematikaunsil',
     category: 'Social Media',
-    image: '/src/assets/gemamatematika/g2.jpeg'
+    image: imgG2
   },
   {
     title: 'Konten Media Sosial @kkn113_parigi',
     category: 'Social Media',
-    image: '/src/assets/kkn/k2.jpeg'
+    image: imgK2
   },
   {
     title: 'Video Project Entrepreneur',
@@ -98,16 +104,10 @@ const filteredItems = computed(() => {
   scrollbar-width: none;
 }
 
-@media (max-width: 1100px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 </style>
