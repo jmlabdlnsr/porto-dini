@@ -26,20 +26,32 @@
         <div 
           v-for="item in filteredItems" 
           :key="item.title" 
-          class="relative rounded-[24px] md:rounded-[28px] bg-white border border-primary-pink/15 overflow-hidden transition-all duration-300 group hover:shadow-soft-hover hover:border-primary-pink w-full"
+          class="group relative flex flex-col h-full min-h-[380px] md:min-h-[420px] bg-white rounded-[24px] md:rounded-[28px] border border-primary-pink/15 overflow-hidden transition-all duration-300 hover:shadow-soft-hover hover:border-primary-pink"
         >
-          <div class="flex flex-col h-full">
-            <div class="relative w-full aspect-[4/3] overflow-hidden">
-              <img :src="item.image" :alt="item.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
-              <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[0.6rem] md:text-[0.65rem] font-extrabold text-deep-pink uppercase z-10 shadow-sm border border-soft-pink">{{ item.category }}</div>
+          <div class="relative w-full h-48 md:h-56 lg:h-60 overflow-hidden bg-ultra-soft shrink-0">
+            <img 
+              :src="item.image" 
+              :alt="item.title" 
+              class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110" 
+              loading="lazy"
+            >
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[0.6rem] md:text-[0.65rem] font-extrabold text-deep-pink uppercase z-10 shadow-sm border border-soft-pink">
+              {{ item.category }}
             </div>
-            <div class="p-5 md:p-6 bg-white flex flex-col flex-grow">
-              <h3 class="text-base md:text-lg font-extrabold text-text-dark mb-4 leading-tight group-hover:text-primary-pink transition-colors">{{ item.title }}</h3>
-              <div class="mt-auto flex items-center gap-2 text-[0.8rem] md:text-[0.85rem] font-bold text-text-light group-hover:text-primary-pink transition-all">
-                <span>Eksplorasi Karya</span>
-                <div class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 rounded-full bg-soft-pink text-primary-pink group-hover:bg-primary-pink group-hover:text-white transition-all">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" md:width="14" md:height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </div>
+          </div>
+
+          <div class="p-5 md:p-6 flex flex-col flex-grow bg-white">
+            <h3 class="text-base md:text-lg font-extrabold text-text-dark mb-4 leading-tight group-hover:text-primary-pink transition-colors">
+              {{ item.title }}
+            </h3>
+            
+            <div class="mt-auto flex items-center gap-2 text-[0.8rem] md:text-[0.85rem] font-bold text-text-light group-hover:text-primary-pink transition-all">
+              <span>Eksplorasi Karya</span>
+              <div class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 rounded-full bg-soft-pink text-primary-pink group-hover:bg-primary-pink group-hover:text-white transition-all transform group-hover:translate-x-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
               </div>
             </div>
           </div>
