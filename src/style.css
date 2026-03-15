@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-pink: #f8a5c2;
+  --accent-pink: #fbc2eb;
+  --deep-pink: #ef87a7;
+  --soft-pink: #fff5f8;
+  --ultra-soft: #fffbfc;
+  --text-dark: #2d3436;
+  --text-light: #636e72;
+  --shadow: 0 10px 30px rgba(248, 165, 194, 0.12);
+  --shadow-hover: 0 15px 35px rgba(248, 165, 194, 0.2);
+  --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background-color: white;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+  section { padding: 80px 5%; }
+}
+
+@media (max-width: 768px) {
+  section { padding: 60px 20px; }
+}
+
+.btn {
+  @apply inline-block px-8 py-3 rounded-full font-semibold transition-all cursor-pointer border-none whitespace-nowrap;
+}
+
+.btn-primary {
+  @apply bg-primary-pink text-white shadow-[0_4px_15px_rgba(248,165,194,0.4)] hover:-translate-y-1 hover:bg-deep-pink hover:shadow-[0_6px_20px_rgba(248,165,194,0.6)];
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-primary-pink text-primary-pink ml-4 hover:bg-soft-pink hover:border-deep-pink hover:text-deep-pink;
+}
+
+.section-title {
+  @apply text-center mb-[3.5rem] text-[clamp(2rem,5vw,2.5rem)] relative font-extrabold;
+}
+
+.section-title::after {
+  content: '';
+  @apply block w-[50px] h-1 mx-auto my-3 rounded bg-gradient-to-r from-primary-pink to-accent-pink;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-[15px] border border-soft-pink/20 rounded-[24px] shadow-soft transition-all duration-300;
+}
