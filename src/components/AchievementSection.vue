@@ -14,19 +14,22 @@
         <div class="bento-card lg:col-span-2 lg:row-span-2 bg-ultra-soft group relative">
           <div class="absolute inset-0 bg-white/85 backdrop-blur-[5px] z-[1]"></div>
           
-          <div class="relative z-[2] p-8 h-full flex flex-col items-center justify-center text-center">
-            <div class="absolute top-8 left-8 right-8 flex justify-between items-center">
+          <div class="relative z-[2] p-8 h-full flex flex-col justify-between">
+            <!-- Top Elements -->
+            <div class="flex justify-between items-center">
               <span class="font-mono text-sm font-bold text-primary-pink opacity-40">01</span>
               <span class="text-[0.7rem] font-extrabold uppercase px-5 py-1.5 rounded-full shadow-sm" style="background: linear-gradient(135deg, #FFD700, #FDB931); color: #5C4000;">Juara 1</span>
             </div>
 
-            <div class="w-full px-4">
+            <!-- Title (Left Aligned for consistency) -->
+            <div class="my-8">
               <h3 class="text-[clamp(1.5rem,3.5vw,2.2rem)] font-extrabold text-text-dark leading-tight m-0 group-hover:text-primary-pink transition-colors">
                 Lomba Inovasi Digital Mahasiswa FKIP UNSIL
               </h3>
             </div>
 
-            <div class="absolute bottom-8 right-8">
+            <!-- Bottom Elements -->
+            <div class="flex justify-end">
               <span class="font-bold text-[#ccc] text-[0.9rem] font-mono tracking-widest">2025</span>
             </div>
           </div>
