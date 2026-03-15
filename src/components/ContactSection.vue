@@ -30,7 +30,7 @@
       </div>
     </section>
 
-    <footer class="py-16 pb-8 bg-white border-t border-primary-pink/15 w-full overflow-hidden">
+    <footer class="py-16 pb-8 bg-soft-pink border-t border-primary-pink/15 w-full overflow-hidden">
       <div class="max-w-[1200px] mx-auto px-10">
         <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-8 text-center md:text-left">
           <div>
@@ -38,7 +38,7 @@
             <p class="text-[0.85rem] text-text-light mt-1">Mahasiswi Pendidikan Matematika | Desainer Kreatif</p>
           </div>
           <div class="flex gap-4">
-            <a v-for="social in socialLinks" :key="social.title" :href="social.href" :title="social.title" class="w-10 h-10 rounded-full bg-soft-pink text-primary-pink flex items-center justify-center transition-all duration-300 hover:bg-primary-pink hover:text-white hover:-translate-y-1" v-html="social.icon"></a>
+            <a v-for="social in socialLinks" :key="social.title" :href="social.href" :title="social.title" class="w-10 h-10 rounded-full bg-white text-primary-pink flex items-center justify-center shadow-sm border border-primary-pink/10 transition-all duration-300 hover:bg-primary-pink hover:text-white hover:-translate-y-1" v-html="social.icon"></a>
           </div>
         </div>
         
@@ -46,7 +46,7 @@
         
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[#999] text-[0.85rem] text-center font-medium">
           <p>© 2026 Dini Ardiningrum. All rights reserved.</p>
-          <p>Handcrafted with <span class="text-primary-pink inline-block animate-pulse">❤</span> in Tasikmalaya</p>
+          <p>Handcrafted with <span class="text-primary-pink inline-block animate-pulse">❤</span> in Sumedang</p>
         </div>
       </div>
     </footer>
