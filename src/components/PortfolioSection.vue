@@ -81,11 +81,6 @@ const portfolioItems = [
     title: 'Konten Media Sosial @kkn113_parigi',
     category: 'Social Media',
     image: imgK2
-  },
-  {
-    title: 'Video Project Entrepreneur',
-    category: 'Videografi',
-    image: 'https://via.placeholder.com/600x450/fff5f8/f8a5c2?text=Video+Production'
   }
 ];
 
