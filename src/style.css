@@ -23,7 +23,7 @@ html, body {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
   color: var(--text-dark);
-  background-color: white;
+  background-color: #ffffff;
 }
 
 section {
@@ -35,6 +35,7 @@ section {
   padding: 100px 5%;
   width: 100%;
   box-sizing: border-box;
+  background: transparent !important;
 }
 
 @media (max-width: 992px) {
@@ -67,5 +68,9 @@ section {
 }
 
 .glass-card {
-  @apply bg-white/80 backdrop-blur-[15px] border border-soft-pink/20 rounded-[24px] shadow-soft transition-all duration-300;
+  @apply bg-white border border-soft-pink/30 rounded-[28px] shadow-soft transition-all duration-300;
+}
+
+.card-item {
+  @apply glass-card hover:shadow-soft-hover hover:border-primary-pink/30;
 }

@@ -1,8 +1,6 @@
 <template>
   <div>
-    <section id="contact" class="bg-gradient-to-b from-white to-soft-pink pt-[100px] pb-20 relative overflow-hidden">
-      <div class="absolute w-[450px] h-[450px] bg-soft-pink blur-[100px] rounded-full -top-[200px] -right-[200px] opacity-20 z-[1]"></div>
-      
+    <section id="contact" class="bg-transparent pt-[100px] pb-20 relative overflow-hidden">
       <div class="max-w-[1100px] mx-auto px-5 relative z-[2]">
         <div class="text-center mb-16">
           <span class="bg-soft-pink text-deep-pink px-4 py-1.5 rounded-full text-[0.75rem] font-extrabold uppercase tracking-widest inline-block mb-5 border border-primary-pink/20">Get In Touch</span>
@@ -18,7 +16,7 @@
           </div>
 
           <div class="flex flex-col gap-5 w-full items-center lg:items-start">
-            <a v-for="link in contactLinks" :key="link.label" :href="link.href" class="bg-white p-4 md:p-6 rounded-2xl flex items-center gap-5 transition-all duration-300 border border-primary-pink/15 shadow-soft w-full max-w-[350px] box-border group hover:-translate-y-1 hover:border-primary-pink hover:shadow-soft-hover">
+            <a v-for="link in contactLinks" :key="link.label" :href="link.href" class="card-item p-4 md:p-6 rounded-2xl flex items-center gap-5 transition-all duration-300 w-full max-w-[350px] box-border group hover:-translate-y-1">
               <div class="w-10 h-10 shrink-0 bg-soft-pink text-primary-pink rounded-xl flex items-center justify-center transition-colors duration-300 group-hover:bg-primary-pink group-hover:text-white" v-html="link.icon"></div>
               <div class="overflow-hidden text-left">
                 <h4 class="text-[0.75rem] mb-0.5 text-text-light uppercase tracking-widest font-medium">{{ link.label }}</h4>
@@ -30,7 +28,7 @@
       </div>
     </section>
 
-    <footer class="py-16 pb-8 bg-soft-pink border-t border-primary-pink/15 w-full overflow-hidden">
+    <footer class="py-16 pb-8 bg-transparent border-t border-primary-pink/15 w-full overflow-hidden">
       <div class="max-w-[1200px] mx-auto px-10">
         <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-8 text-center md:text-left">
           <div>

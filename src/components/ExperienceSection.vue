@@ -1,12 +1,12 @@
 <template>
-  <section id="experience" class="bg-white py-[100px] relative overflow-hidden">
+  <section id="experience" class="bg-transparent py-[100px] relative overflow-hidden">
     <div class="w-full max-w-[1800px] mx-auto px-2 md:px-10 relative z-10">
       <div class="text-center mb-20">
         <div class="mb-5">
-          <span class="inline-block px-4 py-1.5 bg-soft-pink text-deep-pink rounded-full text-[0.8rem] font-bold uppercase tracking-widest border border-primary-pink/20">Journeys</span>
+          <span class="inline-block px-4 py-1.5 bg-soft-pink text-deep-pink rounded-full text-[0.75rem] font-extrabold uppercase tracking-widest border border-primary-pink/20">Journeys</span>
         </div>
         <div class="relative inline-block">
-          <h2 class="text-[clamp(2rem,5vw,2.8rem)] text-text-dark m-0 font-extrabold pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[60px] after:h-1 after:bg-gradient-to-r after:from-primary-pink after:to-accent-pink after:rounded-full">Pengalaman <span class="text-primary-pink">Organisasi</span></h2>
+          <h2 class="text-[clamp(2rem,5vw,2.5rem)] text-text-dark m-0 font-extrabold relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[50px] after:h-1 after:bg-gradient-to-r after:from-primary-pink after:to-accent-pink after:rounded-full">Pengalaman <span class="text-primary-pink font-normal">Organisasi</span></h2>
         </div>
       </div>
 
@@ -23,7 +23,7 @@
             ]"
           ></div>
           
-          <div class="glass-card p-6 md:p-8 w-full border border-primary-pink/15 group hover:-translate-y-2 hover:bg-white hover:shadow-soft-hover hover:border-primary-pink transition-all duration-300">
+          <div class="card-item p-6 md:p-8 w-full border border-primary-pink/15 group hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
               <div class="w-11 h-11 bg-soft-pink text-primary-pink rounded-xl flex items-center justify-center shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -36,8 +36,6 @@
         </div>
       </div>
     </div>
-    
-    <div class="absolute w-[400px] h-[400px] bg-soft-pink blur-[100px] rounded-full -bottom-[200px] -left-[200px] opacity-30"></div>
   </section>
 </template>
 

@@ -1,15 +1,14 @@
 <template>
-  <section id="about" class="bg-gradient-to-b from-soft-pink to-white py-[100px] relative overflow-hidden">
+  <section id="about" class="bg-transparent py-[100px] relative overflow-hidden">
     <div class="max-w-[1100px] mx-auto px-5 relative z-[5]">
       <div class="mb-14 text-left">
-        <span class="bg-soft-pink text-deep-pink px-4 py-1.5 rounded-full uppercase tracking-[3px] font-bold text-[0.8rem] inline-block mb-5 border border-primary-pink/20">Personal Info</span>
-        <h2 class="text-[clamp(2rem,5vw,2.8rem)] font-extrabold text-text-dark m-0">Tentang <span class="text-primary-pink">Saya</span></h2>
-        <div class="w-[60px] h-1 bg-gradient-to-r from-primary-pink to-accent-pink mt-4 rounded-full"></div>
+        <span class="bg-soft-pink text-deep-pink px-4 py-1.5 rounded-full text-[0.75rem] font-extrabold uppercase tracking-widest inline-block mb-5 border border-primary-pink/20">Personal Info</span>
+        <h2 class="text-[clamp(2rem,5vw,2.5rem)] font-extrabold text-text-dark m-0 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[50px] after:h-1 after:bg-gradient-to-r after:from-primary-pink after:to-accent-pink after:rounded-full">Tentang <span class="text-primary-pink font-normal">Saya</span></h2>
       </div>
       
       <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-stretch">
         <div class="flex flex-col">
-          <div class="glass-card p-[clamp(1.5rem,3vw,2.5rem)] flex flex-col justify-center h-full">
+          <div class="card-item p-[clamp(1.5rem,3vw,2.5rem)] flex flex-col justify-center h-full">
             <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-relaxed text-text-dark mb-6">
               Saya adalah seorang mahasiswi <strong class="text-deep-pink font-bold">Pendidikan Matematika</strong> di Universitas Siliwangi yang memiliki antusiasme tinggi dalam menggabungkan ilmu matematika dengan kreativitas digital.
             </p>
@@ -21,7 +20,7 @@
 
         <div class="h-full">
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 h-full">
-            <div v-for="info in infoData" :key="info.label" class="bg-white p-[0.8rem_1.2rem] rounded-[18px] flex items-center gap-5 shadow-soft border border-soft-pink/15 transition-all duration-300 hover:translate-x-2.5 hover:border-primary-pink hover:shadow-soft-hover">
+            <div v-for="info in infoData" :key="info.label" class="card-item p-[0.8rem_1.2rem] rounded-[18px] flex items-center gap-5 transition-all duration-300 hover:translate-x-2.5">
               <div class="w-10 h-10 bg-soft-pink text-primary-pink rounded-xl flex items-center justify-center shrink-0" v-html="info.icon">
               </div>
               <div>
@@ -33,9 +32,6 @@
         </div>
       </div>
     </div>
-    
-    <div class="absolute w-[500px] h-[500px] bg-soft-pink blur-[100px] rounded-full -top-[200px] -left-[200px] z-[1] opacity-50"></div>
-    <div class="absolute w-[500px] h-[500px] bg-accent-pink blur-[100px] rounded-full top-auto -bottom-[200px] -right-[200px] left-auto z-[1] opacity-20"></div>
   </section>
 </template>
 

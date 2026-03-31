@@ -73,6 +73,7 @@ const navLinks = [
   { label: 'Keahlian', href: '#skills' },
   { label: 'Prestasi', href: '#achievements' },
   { label: 'Pengalaman', href: '#experience' },
+  { label: 'Galeri', href: '#gallery' },
   { label: 'Karya', href: '#portfolio' },
   { label: 'Kontak', href: '#contact' },
 ];

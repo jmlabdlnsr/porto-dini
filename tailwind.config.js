@@ -15,8 +15,8 @@ export default {
         'text-light': '#636e72',
       },
       boxShadow: {
-        'soft': '0 10px 30px rgba(248, 165, 194, 0.12)',
-        'soft-hover': '0 15px 35px rgba(248, 165, 194, 0.2)',
+        'soft': '0 20px 40px rgba(248, 165, 194, 0.18)',
+        'soft-hover': '0 30px 60px rgba(248, 165, 194, 0.25)',
       },
       animation: {
         'pulse-slow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
