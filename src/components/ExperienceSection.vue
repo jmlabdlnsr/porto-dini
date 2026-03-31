@@ -52,7 +52,7 @@ const experiences = [
     year: '2023 - 2024'
   },
   {
-    org: 'Panitia Diseminasi Matematika FKIP UNSIL',
+    org: 'Panitia Diseminasi Matematika FKIP Universitas Siliwangi',
     role: 'Seksi Desain, Publikasi, dan Dokumentasi',
     year: '2024'
   },
@@ -62,7 +62,7 @@ const experiences = [
     year: '2024 - 2025'
   },
   {
-    org: 'BPO HIMAPTIKA UNSIL',
+    org: 'BPO HIMAPTIKA Universitas Siliwangi',
     role: 'Deputi Kominfo',
     year: '2026 - sekarang'
   }
