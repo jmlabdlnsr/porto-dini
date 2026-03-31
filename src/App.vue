@@ -1,4 +1,6 @@
 <script setup>
+import { ref, onMounted } from 'vue'
+import Preloader from './components/Preloader.vue'
 import Navbar from './components/Navbar.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
@@ -8,10 +10,25 @@ import AchievementSection from './components/AchievementSection.vue'
 import SkillSection from './components/SkillSection.vue'
 import PortfolioSection from './components/PortfolioSection.vue'
 import ContactSection from './components/ContactSection.vue'
+
+const isLoading = ref(true)
+
+onMounted(() => {
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual'
+  }
+  window.scrollTo(0, 0)
+  
+  setTimeout(() => {
+    isLoading.value = false
+  }, 1000)
+})
 </script>
 
 <template>
   <div class="app-container relative min-h-screen">
+    <Preloader :show="isLoading" />
+
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
       <div 
         class="absolute inset-0 w-full h-full" 
@@ -28,7 +45,10 @@ import ContactSection from './components/ContactSection.vue'
     </div>
 
     <Navbar />
-    <main class="relative z-10">
+    <main 
+      class="relative z-10 transition-all duration-1000 ease-out"
+      :class="{ 'opacity-0 translate-y-10': isLoading, 'opacity-100 translate-y-0': !isLoading }"
+    >
       <HeroSection />
       <AboutSection />
       <SkillSection />

@@ -74,3 +74,7 @@ section {
 .card-item {
   @apply glass-card hover:shadow-soft-hover hover:border-primary-pink/30;
 }
+
+.fade-in {
+  opacity: 1 !important;
+}

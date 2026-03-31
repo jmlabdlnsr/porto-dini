@@ -13,9 +13,8 @@
           class="inline-block w-[200px] md:w-[250px] h-[120px] md:h-[150px] shrink-0 rounded-xl overflow-hidden shadow-soft border-2 border-white transition-transform duration-500 hover:scale-[1.03] bg-white"
         >
           <img 
-            :src="img" 
-            class="w-full h-full object-cover" 
-            loading="lazy"
+            v-lazy="img" 
+            class="w-full h-full object-cover opacity-0 transition-opacity duration-1000" 
             alt="Kegiatan Dini"
           >
         </div>
@@ -30,9 +29,8 @@
           class="inline-block w-[200px] md:w-[250px] h-[120px] md:h-[150px] shrink-0 rounded-xl overflow-hidden shadow-soft border-2 border-white transition-transform duration-500 hover:scale-[1.03] bg-white"
         >
           <img 
-            :src="img" 
-            class="w-full h-full object-cover" 
-            loading="lazy"
+            v-lazy="img" 
+            class="w-full h-full object-cover opacity-0 transition-opacity duration-1000" 
             alt="Kegiatan Dini"
           >
         </div>

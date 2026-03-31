@@ -1,5 +1,5 @@
 <script setup>
-import profileImg from '../assets/dinii.jpeg';
+import profileImg from '../assets/dinii.webp';
 </script>
 
 <template>
@@ -23,7 +23,7 @@ import profileImg from '../assets/dinii.jpeg';
         <h1 class="text-[clamp(2.5rem,6vw,4rem)] leading-tight mb-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-text-dark via-primary-pink to-text-dark bg-[length:200%_auto] animate-gradient-text">Dini Ardiningrum</h1>
         <h2 class="text-text-light text-[clamp(1.1rem,2.5vw,1.6rem)] font-medium mb-8">| Desainer Kreatif</h2>
         <p class="max-w-[550px] mb-10 text-[clamp(0.95rem,1.8vw,1.1rem)] text-text-light leading-relaxed">
-          Mahasiswi Pendidikan Matematika Universitas Siliwangi yang memiliki minat pada pengembangan matematika, multimedia pembelajaran, serta teknologi pendidikan.
+          Mahasiswi Pendidikan Matematika Universitas Siliwangi yang memiliki minat pada bidang desain grafis, ilustrasi, serta pengembangan teknologi dalam pendidikan.
         </p>
         <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-4">
           <a href="#portfolio" class="btn btn-primary text-center px-10 py-4 text-[1rem]">Lihat Portofolio</a>

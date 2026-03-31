@@ -31,10 +31,9 @@
         >
           <div class="relative w-full h-64 md:h-72 overflow-hidden bg-ultra-soft shrink-0">
             <img 
-              :src="item.cover" 
+              v-lazy="item.cover" 
               :alt="item.title" 
-              class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110" 
-              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110 opacity-0" 
             >
             <div class="absolute top-5 left-5 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-[0.65rem] font-extrabold text-deep-pink uppercase z-10 shadow-sm border border-soft-pink/50">
               {{ item.category }}
@@ -95,9 +94,8 @@
                   class="break-inside-avoid rounded-3xl overflow-hidden shadow-soft border-4 border-white transition-all duration-500 hover:shadow-soft-hover hover:-translate-y-2 bg-white group cursor-zoom-in"
                 >
                   <img 
-                    :src="img" 
-                    class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
-                    loading="lazy"
+                    v-lazy="img" 
+                    class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105 opacity-0" 
                   >
                 </div>
               </div>

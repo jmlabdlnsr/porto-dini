@@ -10,10 +10,10 @@
         <div class="flex flex-col">
           <div class="card-item p-[clamp(1.5rem,3vw,2.5rem)] flex flex-col justify-center h-full">
             <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-relaxed text-text-dark mb-6">
-              Saya adalah seorang mahasiswi <strong class="text-deep-pink font-bold">Pendidikan Matematika</strong> di Universitas Siliwangi yang memiliki antusiasme tinggi dalam menggabungkan ilmu matematika dengan kreativitas digital.
+              Saya adalah seorang mahasiswi <strong class="text-deep-pink font-bold">Pendidikan Matematika</strong> di Universitas Siliwangi yang memiliki antusiasme tinggi dalam menggabungkan ilmu matematika dengan dunia kreativitas digital.
             </p>
             <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-relaxed text-text-dark m-0">
-              Fokus utama saya terletak pada pengembangan <strong class="text-deep-pink font-bold">media pembelajaran inovatif</strong>, desain grafis, multimedia, dan pemanfaatan teknologi pendidikan untuk menciptakan pengalaman belajar yang lebih menarik dan efektif.
+              Fokus utama saya terletak pada bidang <strong class="text-deep-pink font-bold">desain grafis dan ilustrasi</strong>, serta pemanfaatan teknologi pendidikan untuk menciptakan pengalaman multimedia yang menarik dan inovatif.
             </p>
           </div>
         </div>
